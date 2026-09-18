@@ -1,0 +1,26 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      system                                                                display="System";logical;slotselect
+/vendor             ext4      vendor                                                                display="Vendor";logical;slotselect
+/product            ext4      product                                                               display="Product";logical;slotselect
+/odm                ext4      odm                                                                   display="ODM";logical;slotselect
+/my_product         ext4      my_product                                                            display="Oppo Product";logical
+/my_engineering     ext4      my_engineering                                                        display="Oppo Engineering";logical
+/my_company         ext4      my_company                                                            display="Oppo Company";logical
+/my_carrier         ext4      my_carrier                                                            display="Oppo Carrier";logical
+/my_region          ext4      my_region                                                             display="Oppo Region";logical
+/my_heytap          ext4      my_heytap                                                             display="Oppo Heytap";logical
+/my_stock           ext4      my_stock                                                              display="Oppo Stock";logical
+/my_preload         ext4      my_preload                                                            display="Oppo Preload";logical
+/my_manifest        ext4      my_manifest                                                           display="Oppo Manifest";logical
+
+/metadata           ext4      /dev/block/by-name/md_udc                                             display="Metadata"
+/cache              ext4      /dev/block/by-name/cache                                              display="Cache"
+/userdata           ext4      /dev/block/by-name/userdata                                           flags=fileencryption=aes-256-xts:inlinecrypt;wrappedkey
+/opporeserve        ext4      /dev/block/by-name/opporeserve2                                       display="Oppo Reserve"
+
+/boot               emmc      /dev/block/by-name/boot                                               flags=slotselect
+/recovery           emmc      /dev/block/by-name/recovery                                           flags=slotselect
+/dtbo               emmc      /dev/block/by-name/dtbo                                               flags=slotselect
+/vbmeta             emmc      /dev/block/by-name/vbmeta                                             flags=slotselect
+/external_sd        vfat      /dev/block/mmcblk1p1                  /dev/block/mmcblk1              flags=display="MicroSD Card";storage;wipeui;removable
+/usb_otg            vfat      /dev/block/sda1                       /dev/block/sda                  flags=display="USB-OTG";storage;wipeui;removable
