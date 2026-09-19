@@ -1,4 +1,4 @@
-DEVICE_PATH := device/oppo/oplus_mssi_64_cn
+DEVICE_PATH := device/oppo/CPH2285
 
 # For flashable images
 TARGET_NO_BOOTLOADER := true
